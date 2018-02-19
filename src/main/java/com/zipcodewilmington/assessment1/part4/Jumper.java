@@ -6,6 +6,8 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-        return -1;
+        Jumper jumper = new Jumper();
+        //wtf?
+        return k - j - 10;
     }
 }

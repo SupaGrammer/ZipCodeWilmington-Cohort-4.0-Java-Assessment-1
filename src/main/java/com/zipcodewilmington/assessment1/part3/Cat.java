@@ -9,13 +9,15 @@ public class Cat extends Pet {
      * @param age age of this Cat
      */
     public Cat(String name, Integer age) {
-
+        this.getName();
+        this.getAge();
     }
 
     /**
      * @param age age of this Cat
      */
     public Cat(Integer age) {
+        this.getAge();
     }
 
     /**

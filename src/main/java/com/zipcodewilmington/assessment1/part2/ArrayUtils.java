@@ -1,6 +1,8 @@
 package com.zipcodewilmington.assessment1.part2;
 
 
+import org.omg.CORBA.Object;
+
 import java.util.Scanner;
 /**
  * Created by leon on 2/16/18.
@@ -28,8 +30,8 @@ public class ArrayUtils {
      * @return an array with identical content excluding the specified `objectToRemove`
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
-    public static Integer[] removeValue(Object[] objectArray, Object objectToRemove) {
-            return null;
+    public static Integer[] removeValue(Integer[] objectArray, Integer objectToRemove) {
+        return null;
     }
 
     /**
@@ -48,25 +50,26 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the least frequently occuring object in the array
      */
     public static Object getLeastCommon(Object[] objectArray) {
-        int[] arrayLeast = new int[10];
-        int count = 0;
-        int minValue = 0;
-        int minCount = objectArray.length;
-        for (int i = 0; i < arrayLeast.length; i++) {
-
-            for (int x = 0; x < arrayLeast.length; x++) {
-                if (arrayLeast[x] == arrayLeast[i]) {
-                    count++;
-                }
-            }
-
-            if (count < minCount) {
-                minCount = count;
-                minValue = arrayLeast[i];
-            }
-        }
-//...something is missing here...
-        return minValue;
+//        int[] arrayLeast = new int[10];
+//        int count = 0;
+//        int minValue = 0;
+//        int minCount = objectArray.length;
+//        for (int i = 0; i < arrayLeast.length; i++) {
+//
+//            for (int x = 0; x < arrayLeast.length; x++) {
+//                if (arrayLeast[x] == arrayLeast[i]) {
+//                    count++;
+//                }
+//            }
+//
+//            if (count < minCount) {
+//                minCount = count;
+//                minValue = arrayLeast[i];
+//            }
+//        }
+////...something is missing here...
+//        return minValue;
+        return null;
     }
 
     /**

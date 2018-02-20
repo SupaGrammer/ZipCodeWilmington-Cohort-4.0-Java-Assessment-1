@@ -1,5 +1,4 @@
 package com.zipcodewilmington.assessment1.part2;
-
 /**
  * Created by leon on 2/16/18.
  */
@@ -11,6 +10,23 @@ public class MultiplesDeleter {
      */
     public Integer[] deleteEvens(Integer[] ints) {
         return null;
+//        int x = 0;
+//        for (int i = 0; i < ints.length; i++) {
+//            if ((ints[i] % 2) != 0) {
+//                //if the remainder of the ints index "i" cannot equal zero then increment
+//                x++;
+//            }
+//        }
+//
+//        Integer[] deleteEvensResult = new Integer[ints.length - x];
+//        for (int i = 0; i < ints.length; i++) {
+//            if ((ints[i] % 2) != 0) {
+//                deleteEvensResult[x] = ints[i];
+//                x++;
+//            }
+//        }
+//
+//        return deleteEvensResult;
     }
 
     /**

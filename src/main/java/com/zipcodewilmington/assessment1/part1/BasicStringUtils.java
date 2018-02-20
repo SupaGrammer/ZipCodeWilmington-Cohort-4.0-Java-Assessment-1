@@ -32,9 +32,9 @@ public class BasicStringUtils {
     public static String reverseThenCamelCase(String str) {
         //create string builder
         StringBuilder camCase = new StringBuilder();
-        //append a string into StringBuilder sb
+        //append a string into StringBuilder
         camCase.append(str);
-        // reverse StringBuilder sb
+        // reverse
         camCase = camCase.reverse();
         String result = camCase.substring(0, 1).toUpperCase() + camCase.substring(1);
         return result;

@@ -1,5 +1,4 @@
 package com.zipcodewilmington.assessment1.part3;
-
 /**
  * Created by leon on 2/16/18.
  */
@@ -8,23 +7,26 @@ public class Cat extends Pet {
      * @param name name of this Cat
      * @param age age of this Cat
      */
+    private String name;
+    private int age;
     public Cat(String name, Integer age) {
-        this.getName();
-        this.getAge();
+        this.name = name;
+        this.age = age;
     }
 
     /**
      * @param age age of this Cat
      */
     public Cat(Integer age) {
-        this.getAge();
+        this.name = "Cat name";
+        this.age = age;
     }
 
     /**
      * @param name name of this Cat
      */
     public Cat(String name) {
-
+        this.name = name;
     }
 
     /**
@@ -34,12 +36,24 @@ public class Cat extends Pet {
      * age is 0
      */
     public Cat() {
+        this.name = "CatName";
+        this.age = 0;
+        // return null;
     }
 
     /**
      * @return meow as a string
      */
     public String speak() {
-        return null;
+        String speak = new String("Meow");
+        return speak;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public Integer getAge() {
+        return this.age;
     }
 }

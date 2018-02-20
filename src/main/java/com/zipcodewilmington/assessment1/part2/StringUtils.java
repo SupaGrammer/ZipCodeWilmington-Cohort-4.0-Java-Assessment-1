@@ -12,7 +12,7 @@ public class StringUtils {
      */
     public static String[] getWords(String sentence) {
 
-        return null;
+        return sentence.split(" ");
     }
 
 
@@ -22,7 +22,8 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word of the sentence
      */
     public static String getFirstWord(String sentence) {
-        return null;
+        String[] words = sentence.split(" ");
+        return words[0];
     }
 
     /**
@@ -31,7 +32,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order
      */
     public static String reverseFirstWord(String sentence) {
-        return null;
+     return new StringBuilder(getFirstWord(sentence)).reverse().toString();
     }
 
     /**
@@ -40,18 +41,27 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        return null;
+        String reverseCam = reverseFirstWord(sentence);
+        String capReverse = reverseCam.substring(0,1);
+        return capReverse.toUpperCase() + reverseCam.substring(1);
+      }
+//there should be a way to do this on one line with string builder?
+//        String firstWord = getFirstWord(sentence);
+//        new StringBuilder(firstWord).reverse().toString();
+//        String result = firstWord.substring(0, 1).toUpperCase() + firstWord.substring(1);
+//        return result;
+
+
+
+        /**
+         * @param str string input from client
+         * @param index the index of the character to be removed from `str`
+         * @return string with identical contents, excluding the character at the specified index
+         * given a string and index, return an identical string excluding the character at the specified index
+         */
+        public static String removeCharacterAtIndex (String str,int index){
+
+            return str.substring(0, index) + str.substring(index + 1);
+        }
     }
 
-
-    /**
-     * @param str string input from client
-     * @param index the index of the character to be removed from `str`
-     * @return string with identical contents, excluding the character at the specified index
-     * given a string and index, return an identical string excluding the character at the specified index
-     */
-    public static String removeCharacterAtIndex(String str, int index) {
-        return null;
-    }
-
-}
